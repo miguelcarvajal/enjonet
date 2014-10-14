@@ -24,6 +24,11 @@ body {
   padding: 7px;    
 }
 
+.media-object {
+  display: block;
+  margin-top: 6px;
+}
+
 .media:hover,
 .media:focus {
   color: #555;
