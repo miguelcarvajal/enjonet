@@ -1,7 +1,14 @@
 body {
-  min-height: 2000px;
+  min-height: auto;
   padding-top: 70px;
   font-family: "Menlo";    
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
 }
 
 .navbar-default {
@@ -36,6 +43,7 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
+.footer
 .container {
   width: auto;
   max-width: 960px;
