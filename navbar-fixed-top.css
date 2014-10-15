@@ -39,7 +39,6 @@ body {
 }
 
 .media-object {
-  float: inherit;    
   display: block;
   margin-top: 6px;
   margin-right: 20px;  
