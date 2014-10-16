@@ -27,14 +27,19 @@ body {
 
 .media,
 .media-body {
-  line-height: 17px;    
+  line-height: 16px;    
   overflow: hidden;
   zoom: 1;
-  padding: 7px;    
+  padding: 4px;    
+}
+
+.media,
+.media .media {
+  margin-top: 10px;
 }
 
 .media p {
-  font-size: 17px;
+  font-size: 15px;
   color: #8e8c8c;
 }
 
