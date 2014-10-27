@@ -1,22 +1,19 @@
 body {
   min-height: auto;
-  padding-top: 70px;
+  padding-top: 50px;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
-.header {
- background-color: #8cb9d1;
-   padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
-    
-}
 
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 40px;
   border-top: 1px solid #eee;
+}
+
+.navbar-default .navbar-brand {
+    color: #4d83b4;
 }
 
 .navbar-brand {
@@ -51,6 +48,20 @@ body {
   color: #8e8c8c;
 }
 
+.media h4 {
+  color: #4d83b4;
+  font-weight: 600;
+}
+
+.jumbotron{
+  height: 120px;     
+  background: -webkit-linear-gradient(90deg, #517fa4 10%, #243949 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #517fa4 10%, #243949 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #517fa4 10%, #243949 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #517fa4 10%, #243949 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #517fa4 10%, #243949 90%); /* W3C */
+} 
+
 .media-upvote {
   display: block;
   width: 35px;
@@ -65,7 +76,7 @@ body {
 }
 
 .voter {
-  border-color: transparent transparent #BBB;
+  border-color: transparent transparent #4d83b4;
   border-style: solid;
   border-width: 10px;
   width: 3px;
@@ -85,7 +96,7 @@ color: #555;
 .score {
     font-size: 12px;
     position: relative;
-    color: #AAA;
+    color: #4d83b4;
     font-weight: 600;
     transition: color 0s ease 0s, all 0.1s ease 0s, all 0s ease-in 0s;
 }
