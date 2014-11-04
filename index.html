@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Periscopio - Startups, herramientas y pistas para periodistas y creadores</title>
+    <meta name="description" content="Periscop.io. Descubre y comparte los productos y herramientas del periodismo más innovador. Participa en esta comunidad de creadores y comunicadores e inspírate para tus proyectos e historias">
+    <meta name="author" content="Miguel Carvajal">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Periscop.io - Productos y herramientas para periodistas y creadores</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+    <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'es'}
+    </script>
+    </head>
 
   <body>
 
@@ -41,18 +45,19 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">Login</a></li>
-            <li><a href="#contact">About</a></li>
+            <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Registrar</a></li>
+            <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Descubre</a></li>
+            <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><i class="fa fa-plus fa"></i> Nuevo</a></li> 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Startups</a></li>
-                <li><a href="#">Storytelling</a></li>
                 <li><a href="#">Herramientas</a></li>
+                <li><a href="#">Storytelling</a></li>
+                <li><a href="#">Startups</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header">Cuenta</li>
+                <li><a href="#">Mensajes</a></li>
+                <li><a href="#">Ajustes</a></li>
               </ul>    
             </li>
             <form class="navbar-form navbar-left" role="search">
@@ -69,7 +74,8 @@
     <div class="jumbotron">
       <div class="container">
         <div class="row">   
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
+            <p class="lead" style="color: #fff">Colección diaria de productos y herramientas para creadores</p>    
             </div>
         </div>
     </div>
@@ -77,54 +83,86 @@
     <div class="container">    
          <div class="row">   
             <div class="col-lg-12">
-            <h3>Hoy <small style="color:#8e8c8c">14 de octubre de 2014</small></h3>
+            <h3>Hoy <small style="color:#8e8c8c">4 de noviembre de 2014</small></h3>
 
 <ul class="media-list">            
-    <li class="media">
-        <a class="pull-right hidden-xs" href="#">
+        <li class="media">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <img class="comment-image" src="comment.png" alt="...">
         </a>
-        <a class="pull-right hidden-xs" href="#">
-        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/378800000175581069/912fd76554dc8cca70b91ebb2a0a77a6_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Tooltip on top" alt="...">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/1659489066/office_20girl_1318895278439_normal.jpg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Una reportera geeky" alt="...">
         </a>
-    <a class="pull-left" href="#">
+    <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <div class="media-upvote"><span class="voter"></span><span class="score small">260</span>              </div>
+        </a>
+        <div class="media-body">
+        <h4 class="media-heading">oTranscribe</h4>
+        <p>Aplicación gratuita para transcribir entrevistas en modo ninja</p>
+        </div>
+        </li>
+
+        <li class="media">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="comment-image" src="comment.png" alt="...">
+        </a>
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/2538012366/tatmkbtw7zv08txuy5cn_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Un profesor entusiasta" alt="...">
+        </a>
+    <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <div class="media-upvote"><span class="voter"></span><span class="score">120</span>              </div>
+        </a>
+        <div class="media-body">
+        <h4 class="media-heading">Datawrapper</h4>
+        <p>Crea gráficos de barras, de círculos y lineales. Fácil integración con Excel</p>
+        </div>
+        </li>    
+
+        <li class="media">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="comment-image" src="comment.png" alt="...">
+        </a>
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/526411071687782400/5lWXrFRB_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Un usuario intépido" alt="...">
+        </a>
+    <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <div class="media-upvote"><span class="voter"></span><span class="score small">260</span>              </div>
         </a>
         <div class="media-body">
         <h4 class="media-heading">Contributoria</h4>
-        <p>Crowdfunding de periodismo para financiar temas y periodistas</p>
+        <p>Plataforma de crowdfunding para financiar temas y periodistas</p>
         </div>
-    </li>
+        </li>
         
-    <li class="media">
-        <a class="pull-right hidden-xs" href="#">
+        <li class="media">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <img class="comment-image" src="comment.png" alt="...">
         </a>
-        <a class="pull-right hidden-xs" href="#">
-        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/2538012366/tatmkbtw7zv08txuy5cn_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Tooltip on top" alt="...">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/2319000659/5sj6czy7ifq3a6hijkxn_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Un programador salvavidas" alt="...">
         </a>
-    <a class="pull-left" href="#">
+    <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <div class="media-upvote"><span class="voter"></span><span class="score">120</span>              </div>
         </a>
         <div class="media-body">
-        <h4 class="media-heading">Beacon Reader</h4>
-        <p>Una plataforma de crowdfunding que permite financiar temas y periodistas</p>
+        <h4 class="media-heading">Analytify </h4>
+        <p>Simplifica el uso Google Analytics en WordPress</p>
         </div>
-    </li>    
+        </li>    
 </ul>
                             
-<h3>Ayer <small style="color:#8e8c8c">13 de octubre de 2014</small></h3>
+<h3>Ayer <small style="color:#8e8c8c">3 de noviembre de 2014</small></h3>
 
 <ul class="media-list">            
                 
     <li class="media">
-        <a class="pull-right" href="#">
+        <a class="pull-right" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <img class="comment-image" src="comment.png" alt="...">
         </a>
-        <a class="pull-right hidden-xs" href="#">
-        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/488615889659371520/h3O9KxcS_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Tooltip on top" alt="...">
+        <a class="pull-right hidden-xs" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/526210654122672129/pxrWLfjS_normal.jpeg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Una periodista avispada" alt="...">
         </a>        
-        <a class="pull-left" href="#">
+        <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <div class="media-upvote"><span class="voter"></span><span class="score">84</span>              </div>
         </a>
         <div class="media-body">
@@ -134,13 +172,13 @@
     </li>
 
     <li class="media">
-        <a class="pull-right" href="#">
+        <a class="pull-right" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <img class="comment-image" src="comment.png" alt="...">
         </a>
         <a class="pull-right hidden-xs" href="#">
-        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/3406931774/41cc2ebf8a4f439599009f80397c904c_normal.png" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Tooltip on top" alt="...">
+        <img class="media-object img-circle" src="https://pbs.twimg.com/profile_images/1402714142/twitter_profile_reasonably_small.jpg" height="40" width="40" data-toggle="tooltip" data-placement="top" title="Un diseñador hipster" alt="...">
         </a>
-        <a class="pull-left" href="#">
+        <a class="pull-left" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
         <div class="media-upvote"><span class="voter"></span><span class="score">64</span></div>
         </a>
         <div class="media-body">
@@ -151,11 +189,103 @@
     </ul>
             </div>
         </div>    
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>¿Te gusta lo que ves?</h4>
+                    </div>
+                </div>
+            </div>    
+<hr>    
+    
+          <div class="row">
+            <div class="col-lg-12">
+   
+                <p>
+                    <a class="twitter-follow-button"
+                      href="https://twitter.com/perscpio"
+                      data-show-count="true"
+                      data-size="large">
+                    Sigue al @perscpio
+                    </a>
+
+                    <a class="twitter-share-button" href="https://twitter.com/share"
+                      data-related="perscpio"
+                      data-size="large"
+                      data-count="true"
+                      data-via="perscpio">
+                    Tweet
+                    </a>
+
+                    <span class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/111603636023708273545" data-rel="publisher"></span>
+                    <span class="g-plusone" data-size="large" data-href="http://periscop.io/"></span>
+    
+                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffanperiscopio&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=65&amp;appId=165618353570853" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;" allowTransparency="true"></iframe>
+                    </p>
+            </div>
+        </div>
+    </div>
         
       <!-- Site footer -->
       <div class="footer">
         <p>&copy; Periscop.io, 2014</p>
       </div>
+
+<!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Periscop.io</h2>
+                            <p class="item-intro text-muted">Hay más alegría en dar que en recibir</p>
+                            <h3>Más que una lista, una comunidad de creadores</h3>
+                            <p>Descubre y comparte productos y herramientas para crear y diseñar buen contenido.</p>
+                            
+                            <img class="img-responsive img-centered" src="./img/landing.png" alt="">
+                          
+                            <h3>Inspírate en el trabajo y la experiencia de otros</h3>
+                            <p>Diseñadores, periodistas, programadores y blogueros seleccionan enlaces útiles. La comunidad valora cada aportación.</p>
+
+                            <p class="text-muted">Danos tu correo y te avisamos del lanzamiento</p>
+                            <form class="form-inline" role="form">
+                            <form action="http://hipstafood.us3.list-manage.com/subscribe/post" method="POST">
+                            <input type="hidden" name="u" value="0aa3373bcea2f71202f05dbef">
+                            <input type="hidden" name="id" value="beb337702b">
+                            <input type="hidden" name="orig-lang" value="1">
+                            <p><input class="form-control input-lg" type="text" placeholder="Correo electrónico">
+                            <button class="btn btn-large btn-success btn-lg" type="submit">Enviar</button></p>
+     
+                            </form>
+                            </form>
+                        
+                            <h3>Si no puedes esperar al lanzamiento</h3>
+                            <p>¡Muchas gracias por tu entusiasmo! De momento, puedes suscribirte con tu cuenta de Twitter 
+                            <a target="_blank" href="http://bit.ly/periscop-io">a esta lista de correo</a>. Ahí comenzó
+                            <a target="_blank" href="http://miguelcarvajal.es/2014/09/27/periscop-io/"> la aventura</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Volver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         
     </div> <!-- /container -->
         
@@ -163,6 +293,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript">
+    window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+    </script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.min.js"></script>
