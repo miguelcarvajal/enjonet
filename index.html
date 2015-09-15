@@ -59,7 +59,11 @@
                 <input type="text" class="form-control" placeholder="Buscar">
                 </div>
             </form>
-            <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><i class="fa fa-plus fa"></i> Nuevo</a></li> 
+            <li>
+            
+            <a href="sitemap.xml" data-target="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+
+            <i class="fa fa-plus fa"></i> Nuevo</a></li> 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -68,7 +72,7 @@
                 <li><a href="#">Startups</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Cuenta</li>
-                <li><a href="#">Mensajes</a></li>
+                <li><a href="http://www.miguelcarvajal.com" onclick="trackOutboundLink('http://miguelcarvajal.com'); return false;">Mensajes</a></li>
                 <li><a href="#">Ajustes</a></li>
               </ul>    
             </li>
@@ -356,6 +360,25 @@
     <script type="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.min.js"></script>
     <script type="text/javascript">
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
+    $('a.btn').on('click', function(e) {
+    e.preventDefault();
+    var url = $(this).attr('href');
+    $(".modal-body").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
+});
+    </script>
+    <script>
+    /**
+    * Función de Google Analytics que realiza un seguimiento de un clic en un enlace externo.
+    * Esta función toma una cadena de URL válida como argumento y la utiliza
+    * como la etiqueta del evento.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+         function () {
+         document.location = url;
+         }
+       });
+    }
     </script>  
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -367,5 +390,7 @@
       ga('send', 'pageview');
 
     </script>
+      
+      
   </body>
 </html>
