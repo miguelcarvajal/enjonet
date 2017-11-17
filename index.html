@@ -56,7 +56,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Registrar</a></li>
             <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Descubre</a></li>
-            <li><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><i class="fa fa-plus fa"></i> Nuevo</a></li> 
+            <li><a data-url='@Url.Action("GetGameListing")' data-target="#portfolioModal3" class="portfolio-link" data-toggle="modal"><i class="fa fa-plus fa"></i> Nuevo</a></li> 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -357,7 +357,18 @@
     <script type="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.min.js"></script>
     <script type="text/javascript">
     $(function () { $("[data-toggle='tooltip']").tooltip(); });
-    </script>  
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#modal-content').click(function() {
+    var url = $('#portfolioModal3').data('url');
+    $.get(url, function(data) {
+    $('#modal-content').html(data);
+    $('#portfolioModal3').modal('show');
+    });
+   });
+    });
+   </script> 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
